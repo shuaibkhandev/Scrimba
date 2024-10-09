@@ -133,7 +133,7 @@ main ul .main-fact::marker{
   }
   
   main ul .main-fact {
-    padding-block: 0px;
+    padding-block: 2px;
     font-size: 12px;
   }
 
