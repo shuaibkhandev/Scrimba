@@ -208,25 +208,173 @@ const finalAllMenuIdeas = [
 // Use array destructoring to create arrays of the chefs favourite dishes of meat and
 // fish, and to create arrays of the regular meat and fish dishes
 
-const fishDishes = [
-  "Salmon Rillettes",
-  "Grilled Tuna Provencal",
-  "Fish and Chips",
-];
-const meatDishes = ["Lasagna", "Spaghetti", "Satay Chicken Skewers"];
+// const fishDishes = [
+//   "Salmon Rillettes",
+//   "Grilled Tuna Provencal",
+//   "Fish and Chips",
+// ];
+// const meatDishes = ["Lasagna", "Spaghetti", "Satay Chicken Skewers"];
 
-// Modify these four variables first
-let chefsFishDishes = fishDishes.filter((dishes) => dishes.toLowerCase().charAt(0) === "s");
+// // Modify these four variables first
+// let chefsFishDishes = fishDishes.filter((dishes) => dishes.toLowerCase().charAt(0) === "s");
 
-let regularFishDishes = fishDishes.filter((dishe) => dishe.toLowerCase().charAt(0) !== "s"
-);
+// let regularFishDishes = fishDishes.filter((dishe) => dishe.toLowerCase().charAt(0) !== "s"
+// );
 
-let chefsMeatDishes = meatDishes.filter((dishe) => dishe.toLowerCase().charAt(0) === "s"
-);
-let regularMeatDishes = meatDishes.filter((dishes) => dishes.toLowerCase().charAt(0) !== "s"
-);
+// let chefsMeatDishes = meatDishes.filter((dishe) => dishe.toLowerCase().charAt(0) === "s"
+// );
+// let regularMeatDishes = meatDishes.filter((dishes) => dishes.toLowerCase().charAt(0) !== "s"
+// );
 
-// Finally, use the spread operator to create these two arrays as well
-let chefsDishes = [...chefsFishDishes, ...chefsMeatDishes];
-let regularDishes = [...regularFishDishes, ...regularMeatDishes];
-console.log(regularDishes, chefsDishes);
+// // Finally, use the spread operator to create these two arrays as well
+// let chefsDishes = [...chefsFishDishes, ...chefsMeatDishes];
+// let regularDishes = [...regularFishDishes, ...regularMeatDishes];
+// console.log(regularDishes, chefsDishes);
+
+
+// const obj = {
+//     fullName : "Shuaib Khan",
+//     age : 23,
+//     gender : "Male",
+//     designation : "Web Developer"
+// }
+
+// Object.keys(obj).map((objKey)=>{
+//     console.log(obj[objKey]);
+    
+// })
+
+
+// const monthlyExpenses = {
+//     food: 400,
+//     rent: 1700,
+//     insurance: 550,
+//     internet: 49,
+//     phone: 95  
+//   };
+
+//   const monthlyExpensesValues = Object.values(monthlyExpenses);
+//   const total = monthlyExpensesValues.reduce((acc, value)=>{
+// return acc + value;
+
+//   },0)
+  
+//   console.log(total);
+  
+
+
+// const user = {
+//   name: 'John',
+//   age: 29  
+// };
+
+// const userKeys = Object.keys(user);
+// const uservalues = Object.values(user);
+
+
+
+// const users = {
+//     '2345234': {
+//       name: "John",
+//       age: 29
+//     },
+//     '8798129': {
+//       name: "Jane",
+//       age: 42
+//     },
+//     '1092384': {
+//       name: "Fred",
+//       age: 17 
+//     }
+//   };
+
+// const userKeyVal = Object.entries(users);
+
+// const userOver20 = userKeyVal.reduce((acc, [id, user])=>{
+//     acc.push({user, id});
+//     return acc;
+// },[])
+
+// console.log(userOver20);
+
+
+
+// const customerDishes = [
+//     "Chicken Wings",
+//     "Fish Sandwich",
+//     "Beef Stroganoff",
+//     "Grilled Cheese",
+//     "Blue Cheese Salad",
+//     "Chicken Wings",
+//     "Reuben Sandwich",
+//     "Grilled Cheese",
+//     "Fish Sandwich",
+//     "Chicken Pot Pie",
+//     "Fish Sandwich",
+//     "Beef Stroganoff"
+//   ];
+
+  
+//   console.log(customerDishes.length);
+
+//   const uniquesDishes = [...new Set(customerDishes)];
+//   console.log(uniquesDishes.length)
+  
+
+
+// function about (){
+//     console.log("I am about func.", this.name);
+    
+// }
+
+
+// const obj1 = {
+//     name : "Shuaib Khan",
+//     age : 23
+// }
+
+// about.call(obj1)
+
+// const bind = about.bind(obj1);
+// bind();
+
+// const obj2 = Object.create(obj1);
+// console.log(obj2.__proto__);
+
+
+
+
+
+// function User(){
+//     const user = Object.create(User.prototype);
+//     user.name = "Shuaib";
+//     return user;
+// }
+
+// User.prototype.about = function(){
+//     return `${this.name}`
+    
+// }
+// console.log(User().about());
+
+
+
+// const arr = [];
+// console.log();
+
+
+class Animal{
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  }
+
+   eat(){
+    return `${this.name} eat grass`;
+    
+   }
+}
+
+const animal_1 = new Animal("Hourse", 4);
+console.log(animal_1.eat());
+
